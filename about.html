@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+    
+    <title>Premier Fire Protection & Security Systems in NJ | Security Dynamics Inc</title>
+    <meta name="description" content="Discover Security Dynamics Inc, NJ's leading fire protection and security system provider. With decades of experience, we offer expert installation, inspection, and 24/7 monitoring. Contact us today!">
+    <meta name="keywords" content="fire protection services NJ, commercial fire safety, security systems NJ, fire alarm installation near me, fire sprinkler systems NJ">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Organization Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Security Dynamics Inc",
+        "url": "https://securitydynamicsinc.com",
+        "logo": "https://securitydynamicsinc.com/images/logo-1.webp",
+        "description": "Premier fire protection and security systems provider in New Jersey and Eastern Pennsylvania since 1985",
+        "foundingDate": "1985",
+        "telephone": "+1-609-394-8800",
+        "email": "Sdynamicsnj@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "NJ",
+            "addressCountry": "US"
+        },
+        "areaServed": [
+            {
+                "@type": "State",
+                "name": "New Jersey"
+            },
+            {
+                "@type": "State", 
+                "name": "Pennsylvania"
+            }
+        ],
+        "serviceType": [
+            "Fire Protection Systems",
+            "Security Systems",
+            "Fire Alarm Installation",
+            "Fire Sprinkler Systems",
+            "Access Control Systems",
+            "CCTV Surveillance"
+        ]
+    }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/about-img-2.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        /* Custom CSS Properties for Consistent Theming */
+        :root {
+            --primary-red: #dc2626;
+            --primary-red-hover: #b91c1c;
+            --primary-gray: #1e293b;
+            --light-gray: #f8fafc;
+            --border-radius: 1rem;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --transition-fast: 0.15s ease-in-out;
+            --transition-normal: 0.3s ease-in-out;
+            --transition-slow: 0.5s ease-in-out;
+        }
+        
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-red);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-red-hover);
+        }
+        
+        /* Loading Animation */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+        
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loader-content {
+            text-align: center;
+            color: white;
+        }
+        
+        .loader-logo {
+            width: 40px;
+            height: 40px;
+            margin: 20px auto 0;
+            border: 2px solid rgba(220, 38, 38, 0.3);
+            border-top: 2px solid var(--primary-red);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Scroll-triggered Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        /* Staggered Animation for Grid Items */
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .stagger-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stagger-item:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-item:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-item:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-item:nth-child(4) { transition-delay: 0.4s; }
+        
+        /* Enhanced Card Hover Effects */
+        .enhanced-card {
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .enhanced-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .enhanced-card:hover::before {
+            left: 100%;
+        }
+        
+        .enhanced-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Glassmorphism Effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        /* Advanced Button Styles */
+        .btn-enhanced {
+            position: relative;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+        }
+        
+        .btn-enhanced::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .btn-enhanced:hover::before {
+            left: 100%;
+        }
+        
+        .btn-enhanced:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);
+        }
+        
+        .btn-enhanced:active {
+            transform: translateY(0);
+        }
+        
+        /* Icon Animations */
+        .icon-hover {
+            transition: all var(--transition-normal);
+        }
+        
+        .icon-hover:hover {
+            transform: scale(1.1) rotate(5deg);
+            color: var(--primary-red);
+        }
+        
+        /* Timeline Enhancements */
+        .timeline-item {
+            position: relative;
+            transition: all var(--transition-normal);
+            padding: 2rem 0;
+            border-left: 3px solid #f1f5f9;
+            margin-left: 4rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-red), #ef4444);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.8s ease;
+        }
+        
+        .timeline-item.visible::before {
+            transform: scaleY(1);
+        }
+        
+        .timeline-year {
+            position: absolute;
+            left: -4.5rem;
+            top: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-red), #dc2626);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+            transition: all var(--transition-normal);
+            z-index: 2;
+        }
+        
+        .timeline-item:hover .timeline-year {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #f1f5f9;
+            transition: all var(--transition-normal);
+            margin-left: 1rem;
+        }
+        
+        .timeline-item:hover .timeline-content {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Floating Animation */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Counter Animation */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        /* Testimonial Enhancements */
+        .testimonial-card {
+            position: relative;
+            transition: all var(--transition-slow);
+        }
+        
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-red), #ef4444, var(--primary-red));
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+        }
+        
+        .testimonial-card:hover::before {
+            opacity: 1;
+        }
+        
+        /* Service Area Hover Effects */
+        .service-area-item {
+            transition: all var(--transition-normal);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-area-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-red);
+            transform: scaleY(0);
+            transition: transform var(--transition-normal);
+        }
+        
+        .service-area-item:hover::before {
+            transform: scaleY(1);
+        }
+        
+        .service-area-item:hover {
+            background: linear-gradient(135deg, #fee2e2, #fecaca);
+            transform: translateX(8px);
+            color: var(--primary-red);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.15);
+        }
+        
+        .service-area-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: all var(--transition-normal);
+        }
+        
+        .service-area-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-red);
+        }
+        
+        .service-area-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        /* Progress Bar Animation */
+        .progress-bar {
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-red), #ef4444);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+        
+        /* Parallax Effect */
+        .parallax-bg {
+            transform: translateZ(0);
+            will-change: transform;
+        }
+        
+        /* Text Gradient Effects */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-red), #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Enhanced Shadows */
+        .shadow-enhanced {
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .shadow-enhanced:hover {
+            box-shadow: 
+                0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .enhanced-card:hover {
+                transform: translateY(-4px) scale(1.01);
+            }
+            
+            .floating {
+                animation-duration: 4s;
+            }
+        }
+        
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in,
+            .slide-in-left,
+            .slide-in-right,
+            .scale-in,
+            .stagger-item,
+            .enhanced-card,
+            .timeline-item,
+            .floating,
+            .btn-enhanced {
+                transition: none;
+                animation: none;
+                transform: none;
+            }
+            
+            .fade-in,
+            .slide-in-left,
+            .slide-in-right,
+            .scale-in,
+            .stagger-item {
+                opacity: 1;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .page-loader,
+            .progress-bar,
+            .floating,
+            .btn-enhanced::before,
+            .enhanced-card::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <img src="images/logo-2.webp" alt="Security Dynamics Inc" class="h-16 w-auto mx-auto mb-4 opacity-90">
+            <p class="text-gray-300 mb-6">Loading your trusted security experts...</p>
+            <div class="loader-logo"></div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-0">
+                <div class="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6">
+                    <a href="mailto:Sdynamicsnj@gmail.com" class="flex items-center space-x-2 hover:text-red-500 transition hidden lg:flex">
+                        <i class="far fa-envelope"></i>
+                        <span class="hidden xs:inline">Sdynamicsnj@gmail.com</span>
+                        <span class="xs:hidden">Email</span>
+                    </a>
+                    <a href="tel:6093948800" class="flex items-center space-x-2 hover:text-red-500 transition hidden lg:flex">
+                        <i class="fas fa-phone"></i>
+                        <span>(609) 394-8800</span>
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2 lg:space-x-4">
+                    <span class="hidden lg:inline">Mon-Fri: 9 am - 5 pm</span>
+                    <span class="text-gray-400 hidden lg:inline">|</span>
+                    <div class="flex space-x-2 sm:space-x-4">
+                        <a href="#" class="hover:text-red-500 transition">Pay Monitoring Bill</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="#" class="hover:text-red-500 transition">Pay Service Bill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3 lg:py-4">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-red-600 text-xl order-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Logo -->
+                <div class="flex items-center order-2 lg:order-1">
+                    <a href="index.html">
+                        <img src="images/logo-1.webp" alt="Security Dynamics Inc." class="h-12 sm:h-16 lg:h-16 w-auto">
+                    </a>
+                </div>
+
+                <!-- Mobile Phone Button -->
+                <a href="tel:6093948800" class="lg:hidden bg-red-600 hover:bg-red-700 text-white p-3 rounded text-xl order-3">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 order-2">
+                    <a href="about.html" class="text-red-600 font-medium transition">About Us</a>
+                    
+                    <!-- Fire Protection Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition flex items-center">
+                            Fire Protection
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="p-4">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Fire Extinguishers</a>
+                                
+                                <!-- Fire Alarm Systems Sub-dropdown -->
+                                <div class="relative group/sub">
+                                    <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">
+                                        Fire Alarm Systems
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
+                                        <div class="p-2">
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Inspection</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Installation</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Repairs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Other Fire Protection items... -->
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Fire Sprinkler Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Fire Suppression Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Kitchen Fire Suppression</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Systems Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition flex items-center">
+                            Security Systems
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="p-4">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Access Control Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Alarm Security Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">CCTV Surveillance Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Smart Home Integration</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">24/7 Monitoring System</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Maintenance & Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Learning Center</a>
+                </nav>
+
+                <!-- Desktop Right Actions -->
+                <div class="hidden lg:flex items-center space-x-2 sm:space-x-4 lg:space-x-6 order-3">
+                    <div class="text-right hidden xl:block">
+                        <div class="text-sm text-gray-600">Client Support →</div>
+                        <div class="text-lg font-bold text-gray-800">609-394-8800</div>
+                    </div>
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-4 sm:px-6 lg:px-8 py-2 lg:py-3 rounded-full text-sm lg:text-base font-bold transition-colors duration-300 shadow-lg hover:shadow-xl">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
+        <div id="mobile-menu" class="fixed left-0 top-0 h-full w-80 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-4 border-b">
+                <img src="images/logo-1.webp" alt="Security Dynamics Inc." class="h-10 w-auto">
+                <button id="mobile-menu-close" class="text-gray-700 hover:text-red-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="p-4 border-b">
+                <div class="flex">
+                    <input type="text" placeholder="How Can We Help You?" class="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg text-sm focus:outline-none focus:border-red-500">
+                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-r-lg">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Items -->
+            <div class="py-4">
+                <!-- About Us -->
+                <a href="about.html" class="block px-4 py-4 text-red-600 font-medium hover:bg-gray-50 border-b border-gray-100 text-base">About Us</a>
+
+                <!-- Fire Protection -->
+                <div class="border-b border-gray-100">
+                    <button class="mobile-menu-item w-full flex items-center justify-between px-4 py-4 text-left hover:bg-gray-50">
+                        <span class="font-medium text-gray-800 text-base">Fire Protection</span>
+                        <i class="fas fa-chevron-down text-gray-900"></i>
+                    </button>
+                    <div class="mobile-submenu hidden bg-gray-50">
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Fire Extinguishers</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Fire Alarm Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Fire Sprinkler Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm">Kitchen Fire Suppression</a>
+                    </div>
+                </div>
+
+                <!-- Security Systems -->
+                <div class="border-b border-gray-100">
+                    <button class="mobile-menu-item w-full flex items-center justify-between px-4 py-4 text-left hover:bg-gray-50">
+                        <span class="font-medium text-gray-800 text-base">Security Systems</span>
+                        <i class="fas fa-chevron-down text-gray-900"></i>
+                    </button>
+                    <div class="mobile-submenu hidden bg-gray-50">
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Access Control Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">CCTV Surveillance</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm">24/7 Monitoring</a>
+                    </div>
+                </div>
+
+                <!-- Learning Center -->
+                <a href="#" class="block px-4 py-4 text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-100 text-base">Learning Center</a>
+
+                <!-- Contact Us (Mobile Only) -->
+                <a href="#contact" class="block px-4 py-4 text-gray-800 font-medium hover:bg-gray-50 text-base">Contact Us</a>
+            </div>
+
+            <!-- Service Area Text -->
+            <div class="px-4 pb-20">
+                <p class="text-sm text-red-600 text-center">
+                    Proudly Protecting Businesses Throughout New Jersey, Eastern Pennsylvania, Northern Delaware
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg parallax-bg relative min-h-[60vh] lg:min-h-[70vh] flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center bg-red-600/10 border border-red-600/30 rounded-full px-6 py-2 mb-6 fade-in">
+                    <div class="w-2 h-2 bg-red-500 rounded-full mr-3 animate-pulse"></div>
+                    <span class="text-red-400 text-sm font-medium tracking-wide">ESTABLISHED 1985 • TRUSTED EXPERTS</span>
+                </div>
+                
+                <h1 class="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 fade-in">
+                    About Security Dynamics Inc – Your Trusted <span class="text-gradient">Fire Protection & Security</span> Experts in NJ
+                </h1>
+                
+                <p class="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed fade-in">
+                    Protecting New Jersey businesses and homes with cutting-edge fire protection and security solutions since 1985.
+                </p>
+                
+                <a href="#contact" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg btn-enhanced fade-in">
+                    <i class="fas fa-quote-left mr-3"></i>
+                    Get a Free Quote Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-white relative z-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6 fade-in">
+                    <i class="fas fa-bullseye text-red-500 mr-3 icon-hover"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">OUR MISSION</span>
+                </div>
+                
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6 fade-in">Our Mission</h2>
+                
+                <p class="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 fade-in">
+                    At Security Dynamics Inc, we safeguard lives and property with state-of-the-art fire protection and security systems, 
+                    adhering to NFPA and local NJ codes. Our commitment to safety, compliance, and customer satisfaction drives everything we do, 
+                    ensuring peace of mind for businesses and homeowners throughout New Jersey and Eastern Pennsylvania.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center stagger-item enhanced-card glass-card p-6 rounded-xl">
+                        <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 floating">
+                            <i class="fas fa-shield-alt text-red-600 text-2xl icon-hover"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Safety First</h3>
+                        <p class="text-gray-600">Protecting lives and property with industry-leading safety standards</p>
+                    </div>
+                    
+                    <div class="text-center stagger-item enhanced-card glass-card p-6 rounded-xl">
+                        <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 floating" style="animation-delay: 0.5s;">
+                            <i class="fas fa-certificate text-red-600 text-2xl icon-hover"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Code Compliance</h3>
+                        <p class="text-gray-600">Full adherence to NFPA and local New Jersey regulations</p>
+                    </div>
+                    
+                    <div class="text-center stagger-item enhanced-card glass-card p-6 rounded-xl">
+                        <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 floating" style="animation-delay: 1s;">
+                            <i class="fas fa-handshake text-red-600 text-2xl icon-hover"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Customer Focus</h3>
+                        <p class="text-gray-600">Dedicated to exceeding expectations with personalized service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-left lg:text-center mb-16">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-star text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">WHY CHOOSE US</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6">Why Choose Us?</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    With decades of experience and unwavering commitment to excellence, we're your trusted partner for comprehensive fire protection and security solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="stagger-item enhanced-card shadow-enhanced bg-white rounded-xl p-6">
+                    <div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 floating">
+                        <i class="fas fa-clock text-red-600 icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Emergency Services</h3>
+                    <p class="text-gray-600">Round-the-clock emergency response and monitoring services</p>
+                </div>
+                
+                <div class="stagger-item enhanced-card shadow-enhanced bg-white rounded-xl p-6">
+                    <div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 floating" style="animation-delay: 0.3s;">
+                        <i class="fas fa-user-tie text-red-600 icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Certified Technicians</h3>
+                    <p class="text-gray-600">Fully licensed and certified professionals with ongoing training</p>
+                </div>
+                
+                <div class="stagger-item enhanced-card shadow-enhanced bg-white rounded-xl p-6">
+                    <div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 floating" style="animation-delay: 0.6s;">
+                        <i class="fas fa-calendar-alt text-red-600 icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2"><span class="counter" data-target="38">0</span>+ Years Experience</h3>
+                    <p class="text-gray-600">Nearly four decades of proven expertise in fire and security</p>
+                </div>
+                
+                <div class="stagger-item enhanced-card shadow-enhanced bg-white rounded-xl p-6">
+                    <div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 floating" style="animation-delay: 0.9s;">
+                        <i class="fas fa-tools text-red-600 icon-hover"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Single-Source Provider</h3>
+                    <p class="text-gray-600">Complete fire protection and security solutions under one roof</p>
+                </div>
+            </div>
+            
+            <!-- Customer Testimonial -->
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="text-red-500 text-4xl mb-6">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <blockquote class="text-xl lg:text-2xl text-gray-700 font-medium leading-relaxed mb-6">
+                        "Security Dynamics Inc saved our Newark business from potential fire damage with their rapid response monitoring system. 
+                        When our fire alarm was triggered at 2 AM, their team immediately contacted us and the fire department. 
+                        Their quick action prevented what could have been a devastating loss."
+                    </blockquote>
+                    <div class="flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="font-bold text-gray-900">Michael Rodriguez</div>
+                            <div class="text-gray-600">Manufacturing Facility Owner, Newark NJ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-left lg:text-center mb-16">
+                    <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                        <i class="fas fa-history text-red-500 mr-3"></i>
+                        <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">COMPANY</span>
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6 fade-in">Our History <span class="text-gradient"></span></h2>
+                    <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                        Founded in 1985, Security Dynamics Inc has been serving New Jersey and Eastern Pennsylvania for over 38 years, 
+                        building a legacy of trust, reliability, and uncompromising commitment to safety.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    1985
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Company Founded</h3>
+                                    <p class="text-gray-600">Security Dynamics Inc was established with a vision to provide comprehensive fire protection and security solutions to New Jersey businesses and residents.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    1990s
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Expansion & Growth</h3>
+                                    <p class="text-gray-600">Expanded our services throughout Central New Jersey and began serving Eastern Pennsylvania, establishing ourselves as a regional leader in fire safety.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    2000s
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Technology Integration</h3>
+                                    <p class="text-gray-600">Integrated cutting-edge security technology and 24/7 monitoring systems, becoming a full-service provider for both fire protection and security needs.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    Today
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Industry Leadership</h3>
+                                    <p class="text-gray-600">Continuing our legacy as a family-owned business, serving thousands of satisfied customers with state-of-the-art fire protection and security solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="images/about-img-2.webp" alt="Security Dynamics Inc Team" class="w-full h-96 object-cover rounded-2xl shadow-xl">
+                        <div class="absolute -bottom-6 -right-6 bg-red-600 text-white rounded-2xl p-6 shadow-xl">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold">38+</div>
+                                <div class="text-sm">Years of Excellence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-left lg:text-center mb-16">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-map-marked-alt text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">SERVICE AREAS</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6">Our Service Areas</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    Security Dynamics Inc proudly serves businesses and residents throughout New Jersey and Eastern Pennsylvania, 
+                    including Newark, Jersey City, Cherry Hill, Trenton, Princeton, and surrounding communities.
+                </p>
+            </div>
+            
+            <!-- Service Areas List -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- New Jersey Section -->
+                <div class="group">
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+                        <!-- Header -->
+                        <div class="bg-gradient-to-r from-slate-700 to-slate-800 p-8 text-white relative">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-white/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                                            <i class="fas fa-map-marker-alt text-xl"></i>
+                                        </div>
+                                        <h3 class="text-3xl font-bold">New Jersey</h3>
+                                    </div>
+                                    <p class="text-slate-200 text-lg">Central & Northern Regions</p>
+                                </div>
+                                <div class="text-6xl opacity-20">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content -->
+                        <div class="p-8 space-y-6">
+                            <!-- Primary Coverage -->
+                            <div class="relative">
+                                <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-slate-600 to-slate-700 rounded-full"></div>
+                                <div class="pl-6">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-star text-slate-700 mr-2"></i>
+                                        <h4 class="text-xl font-bold text-[#1e293b]">Primary Service Area</h4>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-xl p-4 mb-3">
+                                        <h5 class="text-lg font-bold text-slate-800 mb-2">Mercer County</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">
+                                            <strong>Key Cities:</strong> Trenton, Princeton, Lawrence Township, Hamilton, Ewing, 
+                                            West Windsor, Hopewell, Pennington, and surrounding communities
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Extended Areas -->
+                            <div class="relative">
+                                <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-slate-500 to-slate-600 rounded-full"></div>
+                                <div class="pl-6">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-map text-slate-600 mr-2"></i>
+                                        <h4 class="text-xl font-bold text-[#1e293b]">Extended Coverage</h4>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Middlesex County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Somerset County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Hunterdon County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Monmouth County</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pennsylvania Section -->
+                <div class="group">
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+                        <!-- Header -->
+                        <div class="bg-gradient-to-r from-red-600 to-red-700 p-8 text-white relative">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="flex items-center mb-3">
+                                        <div class="bg-white/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                                            <i class="fas fa-map-marker-alt text-xl"></i>
+                                        </div>
+                                        <h3 class="text-3xl font-bold">Pennsylvania</h3>
+                                    </div>
+                                    <p class="text-red-100 text-lg">Eastern & Southeastern Regions</p>
+                                </div>
+                                <div class="text-6xl opacity-20">
+                                    <i class="fas fa-fire-extinguisher"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Content -->
+                        <div class="p-8 space-y-6">
+                            <!-- Primary Coverage -->
+                            <div class="relative">
+                                <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-red-500 to-red-600 rounded-full"></div>
+                                <div class="pl-6">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-star text-red-600 mr-2"></i>
+                                        <h4 class="text-xl font-bold text-[#1e293b]">Primary Service Area</h4>
+                                    </div>
+                                    <div class="bg-red-50 rounded-xl p-4 mb-3">
+                                        <h5 class="text-lg font-bold text-red-800 mb-2">Bucks County</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">
+                                            <strong>Key Cities:</strong> Newtown, Doylestown, Langhorne, Bristol, Yardley, 
+                                            Warrington, Chalfont, New Hope, and surrounding communities
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Extended Areas -->
+                            <div class="relative">
+                                <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-red-400 to-red-500 rounded-full"></div>
+                                <div class="pl-6">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-map text-red-500 mr-2"></i>
+                                        <h4 class="text-xl font-bold text-[#1e293b]">Extended Coverage</h4>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Montgomery County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Philadelphia County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Northampton County</span>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                            <span class="text-gray-800 font-medium">Lehigh County</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-slate-700 to-slate-800 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-32 -translate-y-32"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-red-500 opacity-10 rounded-full transform -translate-x-24 translate-y-24"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl lg:text-6xl font-bold text-white leading-tight mb-8">
+                    Ready to protect your business or home?
+                </h2>
+                
+                <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                    Contact Security Dynamics Inc today for a free consultation and quote. 
+                    Our certified technicians are standing by to design the perfect fire protection and security solution for your needs.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-6 fade-in">
+                    <a href="tel:6093948800" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg btn-enhanced shadow-enhanced">
+                        <i class="fas fa-phone mr-3 icon-hover"></i>
+                        Call (609) 394-8800
+                    </a>
+                    <a href="index.html#contact" class="inline-flex items-center bg-white/10 border border-white/20 hover:bg-white hover:text-slate-800 text-white font-bold px-8 py-4 rounded-full text-lg btn-enhanced shadow-enhanced backdrop-blur-sm">
+                        <i class="fas fa-quote-left mr-3 icon-hover"></i>
+                        Request Free Quote
+                    </a>
+                </div>
+                
+                <div class="mt-12 pt-8 border-t border-white/20">
+                    <p class="text-lg text-gray-300">
+                        Licensed & Insured • 38+ Years Experience • Satisfaction Guaranteed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red Divider Line -->
+    <div class="h-px bg-gradient-to-r from-transparent via-red-600 to-transparent"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 lg:py-12">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6 max-w-7xl mx-auto">
+                <!-- Footer Logo Section -->
+                <div class="footer-section sm:col-span-2 md:col-span-3 lg:col-span-1 lg:pr-2">
+                    <div class="footer-logo mb-4">
+                        <img src="images/logo-2.webp" alt="Security Dynamics Inc." class="h-16 sm:h-20 lg:h-24 w-auto">
+                    </div>
+                    <p class="text-sm mb-6 hidden lg:block">Professional security and fire protection services with a commitment to quality and customer satisfaction since 1985.</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services Section -->
+                <div class="footer-section">
+                    <h4 class="text-white font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Home Security</a></li>
+                        <li><a href="#" class="hover:text-white transition">Intrusion Detection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Access Control</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fire Protection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Video Surveillance</a></li>
+                        <li><a href="#" class="hover:text-white transition">24/7 Monitoring</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Quick Links Section -->
+                <div class="footer-section lg:-mx-3">
+                    <h4 class="text-white font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fire Protection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Security Systems</a></li>
+                        <li><a href="#" class="hover:text-white transition">Learning Center</a></li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                            Leave a Review
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Company Info Section -->
+                <div class="footer-section lg:pl-2">
+                    <h4 class="text-white font-semibold text-lg mb-4">Company Info</h4>
+                    <div class="space-y-2 text-sm">
+                        <p>609-394-8800</p>
+                        <p>Central New Jersey, Eastern Pennsylvania</p>
+                        <p>24/7 Emergency Service</p>
+                        <p>Mon-Fri: 9 am - 5 pm</p>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Section -->
+                <div class="footer-section sm:col-span-2 md:col-span-3 lg:col-span-2">
+                    <h4 class="text-white font-semibold text-lg mb-4">Stay Updated</h4>
+                    <p class="text-sm text-gray-300 mb-4">Subscribe to our newsletter for security tips, company updates, and special offers.</p>
+                    <form class="space-y-3">
+                        <div class="flex flex-col gap-2">
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email address" 
+                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-full text-white placeholder-gray-300 focus:outline-none focus:border-white/40 backdrop-blur-sm text-sm"
+                            >
+                            <button 
+                                type="submit" 
+                                class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl text-sm w-full"
+                            >
+                                Subscribe Now
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-400">No spam, unsubscribe at any time. We respect your privacy.</p>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom border-t border-gray-800 mt-8 pt-8">
+                <div class="text-center">
+                    <p class="text-sm mb-4">© 2025 Security Dynamics Inc. All rights reserved.</p>
+                    <p class="text-xs text-gray-500">Fire New Jersey P00747 | Burglar New Jersey 34BA00089500</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <!-- Sticky Mobile CTA Button -->
+       <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
+        <a href="#" class="block bg-red-600 hover:bg-red-700 text-white text-center py-4 font-bold text-lg transition-colors duration-300 shadow-lg">
+            Request A Quote
+        </a>
+    </div>
+
+    <script>
+        // Page Loading and Progress Bar
+        window.addEventListener('load', function() {
+            const pageLoader = document.getElementById('pageLoader');
+            
+            // Hide loader after page loads
+            setTimeout(() => {
+                pageLoader.classList.add('hidden');
+            }, 800);
+        });
+
+        // Progress Bar on Scroll
+        let ticking = false;
+        function updateProgressBar() {
+            const progressBar = document.getElementById('progressBar');
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            progressBar.style.width = scrollPercent + '%';
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateProgressBar);
+                ticking = true;
+            }
+        });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger counter animations
+                    if (entry.target.querySelector('.counter')) {
+                        const counter = entry.target.querySelector('.counter');
+                        animateCounter(counter);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Initialize observers when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe all animated elements
+            const animatedElements = document.querySelectorAll(
+                '.fade-in, .slide-in-left, .slide-in-right, .scale-in, .stagger-item, .timeline-item'
+            );
+            
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Initialize enhanced interactions
+            initializeEnhancedInteractions();
+        });
+
+        // Counter Animation Function
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            if (isNaN(target)) return;
+            
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Enhanced Interactions
+        function initializeEnhancedInteractions() {
+            // Service Area Items
+            document.querySelectorAll('.service-area-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(10px) scale(1.02)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0) scale(1)';
+                });
+            });
+
+            // Button Ripple Effects
+            document.querySelectorAll('.btn-enhanced').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    createRipple(e, this);
+                });
+            });
+        }
+
+        // Ripple Effect Function
+        function createRipple(event, element) {
+            const ripple = document.createElement('span');
+            const rect = element.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}px;
+                top: ${y}px;
+            `;
+            
+            element.style.position = 'relative';
+            element.style.overflow = 'hidden';
+            element.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        }
+
+        // Add ripple animation CSS
+        const rippleCSS = `
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        
+        const style = document.createElement('style');
+        style.textContent = rippleCSS;
+        document.head.appendChild(style);
+
+        // Parallax Effect for Hero Background
+        let parallaxTicking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-bg');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.3;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+            parallaxTicking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!parallaxTicking) {
+                requestAnimationFrame(updateParallax);
+                parallaxTicking = true;
+            }
+        });
+
+        // Accessibility Enhancements
+        document.addEventListener('keydown', function(e) {
+            // ESC key to close mobile menu
+            if (e.key === 'Escape') {
+                const mobileMenu = document.getElementById('mobile-menu-overlay');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Preload critical images for better performance
+        const criticalImages = [
+            'images/about-img-2.webp',
+            'images/hero-image.webp'
+        ];
+        
+        criticalImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('hidden');
+            document.getElementById('main-header').style.display = 'none';
+            setTimeout(() => {
+                mobileMenu.classList.remove('-translate-x-full');
+            }, 10);
+        });
+
+        // Close mobile menu
+        function closeMobileMenu() {
+            mobileMenu.classList.add('-translate-x-full');
+            setTimeout(() => {
+                mobileMenuOverlay.classList.add('hidden');
+                document.getElementById('main-header').style.display = 'block';
+            }, 300);
+        }
+
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                closeMobileMenu();
+            }
+        });
+
+        // Mobile menu item toggles
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+        mobileMenuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const chevron = this.querySelector('.fa-chevron-down, .fa-chevron-up');
+                const submenu = this.nextElementSibling;
+                
+                if (chevron && submenu) {
+                    if (chevron.classList.contains('fa-chevron-down')) {
+                        chevron.classList.remove('fa-chevron-down');
+                        chevron.classList.add('fa-chevron-up');
+                        submenu.classList.remove('hidden');
+                    } else {
+                        chevron.classList.remove('fa-chevron-up');
+                        chevron.classList.add('fa-chevron-down');
+                        submenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

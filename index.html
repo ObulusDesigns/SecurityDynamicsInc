@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+    
+    <title>Security Dynamics Inc - Premier Fire Protection & Security Systems in NJ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI4MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE5MjAiIGhlaWdodD0iODAwIiBmaWxsPSIjMWEyMzMyIi8+PC9zdmc+');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .cta-bg {
+            background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url('images/hero-image.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .industry-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .partner-logo {
+            height: 60px;
+            width: auto;
+            max-width: 150px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0%);
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b91c1c;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-0">
+                <div class="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6">
+                    <a href="mailto:Sdynamicsnj@gmail.com" class="flex items-center space-x-2 hover:text-red-500 transition hidden lg:flex">
+                        <i class="far fa-envelope"></i>
+                        <span class="hidden xs:inline">Sdynamicsnj@gmail.com</span>
+                        <span class="xs:hidden">Email</span>
+                    </a>
+                    <a href="tel:6093948800" class="flex items-center space-x-2 hover:text-red-500 transition hidden lg:flex">
+                        <i class="fas fa-phone"></i>
+                        <span>(609) 394-8800</span>
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2 lg:space-x-4">
+                    <span class="hidden lg:inline">Mon-Fri: 9 am - 5 pm</span>
+                    <span class="text-gray-400 hidden lg:inline">|</span>
+                    <div class="flex space-x-2 sm:space-x-4">
+                        <a href="#" class="hover:text-red-500 transition">Pay Monitoring Bill</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="#" class="hover:text-red-500 transition">Pay Service Bill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header id="main-header" class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3 lg:py-4">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-red-600 text-xl order-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Logo -->
+                <div class="flex items-center order-2 lg:order-1">
+                    <img src="images/logo-1.webp" alt="Security Dynamics Inc." class="h-12 sm:h-16 lg:h-16 w-auto">
+                </div>
+
+                <!-- Mobile Phone Button -->
+                <a href="tel:6093948800" class="lg:hidden bg-red-600 hover:bg-red-700 text-white p-3 rounded text-xl order-3">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 order-2">
+                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">About Us</a>
+                    
+                    <!-- Fire Protection Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition flex items-center">
+                            Fire Protection
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="p-4">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Fire Extinguishers</a>
+                                
+                                <!-- Fire Alarm Systems Sub-dropdown -->
+                                <div class="relative group/sub">
+                                    <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">
+                                        Fire Alarm Systems
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
+                                        <div class="p-2">
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Inspection</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Installation</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Repairs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fire Sprinkler Systems Sub-dropdown -->
+                                <div class="relative group/sub">
+                                    <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">
+                                        Fire Sprinkler Systems
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
+                                        <div class="p-2">
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Inspection</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Installation</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Repairs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fire Suppression Systems Sub-dropdown -->
+                                <div class="relative group/sub">
+                                    <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">
+                                        Fire Suppression Systems
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
+                                        <div class="p-2">
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Inspection</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Installation</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Repairs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Kitchen Fire Suppression Systems Sub-dropdown -->
+                                <div class="relative group/sub">
+                                    <a href="#" class="flex items-center justify-between px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">
+                                        Kitchen Fire Suppression Systems
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300">
+                                        <div class="p-2">
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Inspection</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Installation</a>
+                                            <a href="#" class="block px-3 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition text-sm">Repairs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Commercial Vehicle Fire Suppression Systems</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Systems Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition flex items-center">
+                            Security Systems
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="p-4">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Access Control Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Alarm Security Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">CCTV Surveillance Systems</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Smart Home Integration</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">24/7 Monitoring System</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-gray-50 rounded transition">Maintenance & Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">Learning Center</a>
+                </nav>
+
+                <!-- Desktop Right Actions -->
+                <div class="hidden lg:flex items-center space-x-2 sm:space-x-4 lg:space-x-6 order-3">
+                    <div class="text-right hidden xl:block">
+                        <div class="text-sm text-gray-600">Client Support →</div>
+                        <div class="text-lg font-bold text-gray-800">609-394-8800</div>
+                    </div>
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 sm:px-6 lg:px-8 py-2 lg:py-3 rounded-full text-sm lg:text-base font-bold transition-colors duration-300 shadow-lg hover:shadow-xl">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
+        <div id="mobile-menu" class="fixed left-0 top-0 h-full w-80 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-4 border-b">
+                <img src="images/logo-1.webp" alt="Security Dynamics Inc." class="h-10 w-auto">
+                <button id="mobile-menu-close" class="text-gray-700 hover:text-red-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="p-4 border-b">
+                <div class="flex">
+                    <input type="text" placeholder="How Can We Help You?" class="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg text-sm focus:outline-none focus:border-red-500">
+                    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-r-lg">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Items -->
+            <div class="py-4">
+                <!-- About Us -->
+                <a href="#" class="block px-4 py-4 text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-100 text-base">About Us</a>
+
+                <!-- Fire Protection -->
+                <div class="border-b border-gray-100">
+                    <button class="mobile-menu-item w-full flex items-center justify-between px-4 py-4 text-left hover:bg-gray-50">
+                        <span class="font-medium text-gray-800 text-base">Fire Protection</span>
+                        <i class="fas fa-chevron-down text-gray-900"></i>
+                    </button>
+                    <div class="mobile-submenu hidden bg-gray-50">
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Fire Extinguishers</a>
+                        
+                        <!-- Fire Alarm Systems -->
+                        <div>
+                            <button class="mobile-submenu-item w-full flex items-center justify-between px-8 py-3 text-left hover:bg-gray-100 border-b border-gray-200">
+                                <span class="text-gray-700 text-sm">Fire Alarm Systems</span>
+                                <i class="fas fa-chevron-down text-gray-600 text-xs"></i>
+                            </button>
+                            <div class="mobile-subsubmenu hidden bg-gray-100">
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Inspection</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Installation</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Repairs</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Fire Sprinkler Systems -->
+                        <div>
+                            <button class="mobile-submenu-item w-full flex items-center justify-between px-8 py-3 text-left hover:bg-gray-100 border-b border-gray-200">
+                                <span class="text-gray-700 text-sm">Fire Sprinkler Systems</span>
+                                <i class="fas fa-chevron-down text-gray-600 text-xs"></i>
+                            </button>
+                            <div class="mobile-subsubmenu hidden bg-gray-100">
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Inspection</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Installation</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Repairs</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Fire Suppression Systems -->
+                        <div>
+                            <button class="mobile-submenu-item w-full flex items-center justify-between px-8 py-3 text-left hover:bg-gray-100 border-b border-gray-200">
+                                <span class="text-gray-700 text-sm">Fire Suppression Systems</span>
+                                <i class="fas fa-chevron-down text-gray-600 text-xs"></i>
+                            </button>
+                            <div class="mobile-subsubmenu hidden bg-gray-100">
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Inspection</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Installation</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Repairs</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Kitchen Fire Suppression Systems -->
+                        <div>
+                            <button class="mobile-submenu-item w-full flex items-center justify-between px-8 py-3 text-left hover:bg-gray-100 border-b border-gray-200">
+                                <span class="text-gray-700 text-sm">Kitchen Fire Suppression Systems</span>
+                                <i class="fas fa-chevron-down text-gray-600 text-xs"></i>
+                            </button>
+                            <div class="mobile-subsubmenu hidden bg-gray-100">
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Inspection</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Installation</a>
+                                <a href="#" class="block px-12 py-2 text-gray-600 hover:text-red-600 hover:bg-gray-200 text-xs">Repairs</a>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm">Commercial Vehicle Fire Suppression Systems</a>
+                    </div>
+                </div>
+
+                <!-- Security Systems -->
+                <div class="border-b border-gray-100">
+                    <button class="mobile-menu-item w-full flex items-center justify-between px-4 py-4 text-left hover:bg-gray-50">
+                        <span class="font-medium text-gray-800 text-base">Security Systems</span>
+                        <i class="fas fa-chevron-down text-gray-900"></i>
+                    </button>
+                    <div class="mobile-submenu hidden bg-gray-50">
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Access Control Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Alarm Security Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">CCTV Surveillance Systems</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">Smart Home Integration</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm border-b border-gray-200">24/7 Monitoring System</a>
+                        <a href="#" class="block px-8 py-3 text-gray-700 hover:text-red-600 hover:bg-gray-100 text-sm">Maintenance & Support</a>
+                    </div>
+                </div>
+
+                <!-- Learning Center -->
+                <a href="#" class="block px-4 py-4 text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-100 text-base">Learning Center</a>
+
+                <!-- Contact Us (Mobile Only) -->
+                <a href="#" class="block px-4 py-4 text-gray-800 font-medium hover:bg-gray-50 text-base">Contact Us</a>
+            </div>
+
+            <!-- Service Area Text -->
+            <div class="px-4 pb-20">
+                <p class="text-sm text-red-600 text-center">
+                    Proudly Protecting Businesses Throughout New Jersey, Eastern Pennsylvania, Northern Delaware
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 relative min-h-fit lg:min-h-screen flex items-start lg:items-center">
+        <div class="container mx-auto px-4 pt-8 pb-4 lg:py-12 h-full flex items-start lg:items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center w-full lg:min-h-[80vh]">
+                <!-- Mobile/Desktop Content -->
+                <div class="text-white lg:order-1 flex flex-col justify-start lg:justify-center">
+                    <!-- Mobile Hero Content -->
+                    <div class="lg:hidden">
+                        <!-- Mobile Header -->
+                        <div class="text-left mb-5">
+                            <div class="inline-flex items-center bg-red-600/10 border border-red-600/30 rounded-full px-4 py-2 mb-5">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></div>
+                                <span class="text-red-400 text-sm font-medium tracking-wide">EST. 1985 • TRUSTED PROTECTION</span>
+                            </div>
+                            
+                            <h1 class="text-4xl font-bold leading-tight mb-3 text-white">
+                                Your Trusted<br>
+                                <span class="text-red-500">Security</span> &<br>
+                                <span class="text-red-500">Fire Protection</span><br>
+                                Partner
+                            </h1>
+                            
+                            <p class="text-gray-300 text-base">
+                                Comprehensive safety solutions for homes and businesses
+                            </p>
+                        </div>
+
+                        <!-- Mobile Service Cards - Optimized Design -->
+                        <div class="space-y-3 mb-5">
+                            <!-- Fire Protection Services -->
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-r from-red-600/15 to-transparent rounded-xl"></div>
+                                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="fas fa-fire text-white text-base"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="text-white font-semibold text-lg mb-1">Fire Protection</h3>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                Extinguishers, Alarms, Sprinklers, Kitchen Suppression
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Security Systems -->
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-r from-gray-600/15 to-transparent rounded-xl"></div>
+                                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="fas fa-shield-alt text-white text-base"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="text-white font-semibold text-lg mb-1">Security Systems</h3>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                Access Control, CCTV, Intrusion Detection
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Monitoring & Support -->
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-r from-red-600/10 to-transparent rounded-xl"></div>
+                                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 w-10 h-10 bg-red-700 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="fas fa-headset text-white text-base"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3 class="text-white font-semibold text-lg mb-1">24/7 Monitoring</h3>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                Central Station, Fast Response, Support
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="text-center lg:text-left">
+                            <div class="flex items-center justify-center lg:justify-start space-x-6 text-gray-400 text-sm mb-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-certificate text-red-500 mr-2"></i>
+                                    <span>Licensed & Insured</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock text-red-500 mr-2"></i>
+                                    <span>24/7 Emergency</span>
+                                </div>
+                            </div>
+                            
+                            <div class="text-gray-400 text-sm">
+                                Proudly Serving New Jersey & Eastern Pennsylvania
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Hero Content -->
+                    <div class="hidden lg:block">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-tight mb-4 lg:mb-6">
+                        Your trusted provider of fire protection<br class="hidden sm:block">
+                        and security solutions.
+                    </h1>
+                    
+                        <!-- Desktop Service Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 lg:gap-4 mb-4 lg:mb-6">
+                            <!-- Row 1 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-fire-extinguisher"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Fire Extinguishers</h3>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Security Systems</h3>
+                        </div>
+                        
+                            <!-- Row 2 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-bell"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Fire Alarm Systems</h3>
+                        </div>
+                        
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                <i class="fas fa-key"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Access Control</h3>
+                        </div>
+                        
+                            <!-- Row 3 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-shower"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Sprinkler Systems</h3>
+                        </div>
+                        
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-video"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">CCTV Surveillance</h3>
+                        </div>
+                        
+                            <!-- Row 4 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Kitchen Suppression</h3>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Intrusion Detection</h3>
+                            </div>
+                            
+                            <!-- Row 5 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-smoke"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Smoke Detection</h3>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">24/7 Monitoring</h3>
+                        </div>
+                            
+                            <!-- Row 6 -->
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-red-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-temperature-high"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Temperature Detection</h3>
+                    </div>
+                    
+                            <div class="bg-white rounded-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 sm:space-x-3 lg:space-x-4 hover:shadow-lg transition cursor-pointer">
+                                <div class="text-blue-600 text-lg sm:text-2xl lg:text-3xl flex-shrink-0">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3 class="text-gray-800 font-medium text-xs sm:text-sm lg:text-base">Maintenance & Support</h3>
+                    </div>
+                </div>
+
+                        <div class="mt-3 sm:mt-4 lg:mt-6">
+                            <p class="text-sm sm:text-base lg:text-lg font-light">Proudly Protecting Businesses Throughout New Jersey and Eastern Pennsylvania</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                <!-- Contact Form - Desktop Only -->
+                <div class="hidden lg:flex bg-white rounded-lg shadow-2xl p-3 sm:p-4 md:p-5 lg:p-6 order-1 lg:order-2 flex-col h-full max-w-md lg:max-w-none mx-auto lg:mx-0 w-full">
+                    <div class="text-center mb-3 lg:mb-4">
+                        <div class="flex justify-center mb-2 lg:mb-3">
+                            <img src="images/logo-1.webp" alt="Security Dynamics Inc." class="h-8 sm:h-10 md:h-12 lg:h-16 w-auto">
+                        </div>
+                        <h2 class="text-base sm:text-lg lg:text-xl font-bold text-gray-800">Let us Help You!</h2>
+                        </div>
+                        
+                    <form class="space-y-2 lg:space-y-3 flex-1 flex flex-col">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
+                            <input type="text" placeholder="Full Name" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                            <input type="text" placeholder="Company Name" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
+                            <input type="text" placeholder="Address" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                            <input type="text" placeholder="City" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
+                            <input type="text" placeholder="State" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                            <input type="text" placeholder="Zip" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
+                            <input type="email" placeholder="Email Address" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                            <input type="tel" placeholder="Mobile Number" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500">
+                        </div>
+                        
+                        <div>
+                            <p class="text-xs font-medium text-gray-700 mb-2">Select service(s)</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs max-h-32 overflow-y-auto">
+                                <!-- Fire Protection Services -->
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Fire Extinguishers</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Fire Alarm Systems</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Fire Sprinkler Systems</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Kitchen Fire Suppression</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Smoke Detection</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Emergency Lighting</span>
+                                </label>
+                                <!-- Security Services -->
+                                <label class="flex items-center space-x-1">
+                                <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Security Systems</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Access Control</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>CCTV Surveillance</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Intrusion Detection</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>24/7 Monitoring</span>
+                                </label>
+                                <label class="flex items-center space-x-1">
+                                    <input type="checkbox" class="text-red-600 rounded">
+                                    <span>Smart Home Integration</span>
+                            </label>
+                            </div>
+                        </div>
+                        
+                        <textarea placeholder="Tell us how can we help?" rows="2" class="w-full px-2 sm:px-3 py-2 border border-gray-300 rounded text-xs sm:text-sm focus:outline-none focus:border-red-500 flex-1 min-h-[60px]"></textarea>
+                        
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-4">
+                            <label class="flex items-center space-x-1">
+                                <input type="radio" name="customer" class="text-red-600">
+                                <span class="text-xs">New customer</span>
+                            </label>
+                            <label class="flex items-center space-x-1">
+                                <input type="radio" name="customer" class="text-red-600">
+                                <span class="text-xs">Current customer</span>
+                            </label>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white py-2 sm:py-3 rounded-full font-bold transition-colors duration-300 shadow-lg hover:shadow-xl text-xs sm:text-sm">
+                            Submit Form
+                        </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-8 sm:py-12 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-[#1e293b] mb-4 sm:mb-6">Quality You Can Trust</h2>
+                    <p class="text-base text-gray-600 leading-relaxed mb-6 sm:mb-8">
+                        Family-owned and operated since 1985, Security Dynamics Inc. has been proudly serving New Jersey and Eastern Pennsylvania with comprehensive fire protection and security solutions. Our decades of experience, combined with our commitment to excellence and community service, make us the trusted choice for businesses and homeowners throughout the region.
+                    </p>
+                    
+                    <!-- Trust Badges -->
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
+                        <div class="bg-white rounded-lg p-3 sm:p-4 shadow-md border-l-4 border-red-600 flex items-center space-x-3">
+                            <div class="text-red-600 text-xl sm:text-2xl">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                <div>
+                                <div class="font-bold text-gray-800 text-sm sm:text-base">Licensed & Insured</div>
+                                <div class="text-gray-600 text-xs sm:text-sm">Fully certified professionals</div>
+                        </div>
+                    </div>
+                        
+                        <div class="bg-white rounded-lg p-3 sm:p-4 shadow-md border-l-4 border-gray-900 flex items-center space-x-3">
+                            <div class="text-gray-900 text-xl sm:text-2xl">
+                                <i class="fas fa-home"></i>
+                </div>
+                <div>
+                                <div class="font-bold text-gray-800 text-sm sm:text-base">Family Owned</div>
+                                <div class="text-gray-600 text-xs sm:text-sm">Since 1985</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 rounded-full font-bold transition-colors duration-300 shadow-lg hover:shadow-xl text-center text-sm sm:text-base">
+                            Learn More About Us
+                        </a>
+                        <a href="#" class="border-2 border-gray-300 hover:border-red-600 text-gray-700 hover:text-red-600 px-6 sm:px-8 py-3 rounded-full font-bold transition-colors duration-300 text-center text-sm sm:text-base">
+                            View Our Projects
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="order-1 lg:order-2 relative">
+                    <div class="relative">
+                        <img src="images/about-img-2.webp" alt="About Security Dynamics Inc." class="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg shadow-lg">
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-red-600 text-white rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-lg">
+                            <div class="text-center">
+                                <div class="text-lg sm:text-xl font-bold">38+</div>
+                                <div class="text-xs">Years</div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 bg-white rounded-lg p-3 sm:p-4 shadow-lg border">
+                            <div class="flex items-center space-x-2 sm:space-x-3">
+                                <div class="text-gray-900 text-xl sm:text-2xl">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-800 text-xs sm:text-sm">Award Winning</div>
+                                    <div class="text-gray-600 text-xs">Service Excellence</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-10 lg:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center">
+                <div class="border-r border-gray-200 last:border-0">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">8+</h3>
+                    <p class="text-gray-600 mt-1 lg:mt-2 text-sm lg:text-base">Solutions Offered</p>
+                    <p class="text-xs lg:text-sm text-gray-500 hidden sm:block">Security & Fire Protection</p>
+                </div>
+                <div class="border-r border-gray-200 last:border-0">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">38</h3>
+                    <p class="text-gray-600 mt-1 lg:mt-2 text-sm lg:text-base">Years</p>
+                    <p class="text-xs lg:text-sm text-gray-500 hidden sm:block">Proven Track Record</p>
+                </div>
+                <div class="border-r border-gray-200 last:border-0">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">100<span class="text-xl sm:text-2xl lg:text-3xl">%</span></h3>
+                    <p class="text-gray-600 mt-1 lg:mt-2 text-sm lg:text-base">Customer Satisfaction</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">3<span class="text-xl sm:text-2xl lg:text-3xl ml-1 lg:ml-2">Mins</span></h3>
+                    <p class="text-gray-600 mt-1 lg:mt-2 text-sm lg:text-base">Average Answer Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-8 sm:py-12 lg:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-left lg:text-center mb-8 sm:mb-12 lg:mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-4 sm:mb-6">Our Services</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl lg:mx-auto">
+                    Comprehensive fire protection and security solutions for residential and commercial properties
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+                <!-- Fire Protection Services -->
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <!-- Header -->
+                    <div class="bg-gradient-to-r from-red-600 to-red-700 text-white p-4 sm:p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 sm:w-32 h-20 sm:h-32 bg-white/10 rounded-full -mr-10 sm:-mr-16 -mt-10 sm:-mt-16"></div>
+                        <div class="absolute bottom-0 right-0 w-16 sm:w-24 h-16 sm:h-24 bg-white/5 rounded-full -mr-8 sm:-mr-12 -mb-8 sm:-mb-12"></div>
+                        <div class="relative z-10 flex items-center">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-full p-2 sm:p-3 mr-3 sm:mr-4">
+                                <i class="fas fa-fire text-xl sm:text-2xl"></i>
+                </div>
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold">Fire Protection</h3>
+                                <p class="text-red-100 text-sm">Complete fire safety solutions</p>
+                            </div>
+                        </div>
+                        <!-- Large Background Icon -->
+                        <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 text-white/10 text-4xl sm:text-6xl">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="p-4 sm:p-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            <!-- Core Services -->
+                            <div>
+                                <h4 class="text-base sm:text-lg font-bold text-[#1e293b] mb-3 border-l-3 border-red-500 pl-3">Core Fire Services</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-fire-extinguisher text-red-500 mr-2 text-xs"></i>
+                                        Fire Extinguishers
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-bell text-red-500 mr-2 text-xs"></i>
+                                        Fire Alarm Systems
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-shower text-red-500 mr-2 text-xs"></i>
+                                        Sprinkler Systems
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-smoke text-red-500 mr-2 text-xs"></i>
+                                        Smoke Detection
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Specialized Services -->
+                            <div>
+                                <h4 class="text-base sm:text-lg font-bold text-[#1e293b] mb-3 border-l-3 border-red-500 pl-3">Specialized Solutions</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-utensils text-red-500 mr-2 text-xs"></i>
+                                        Kitchen Fire Suppression
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-exclamation-triangle text-red-500 mr-2 text-xs"></i>
+                                        Special Hazard Systems
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-door-open text-red-500 mr-2 text-xs"></i>
+                                        Emergency Lighting
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-temperature-high text-red-500 mr-2 text-xs"></i>
+                                        Temperature Detection
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security Systems Services -->
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <!-- Header -->
+                    <div class="bg-gradient-to-r from-slate-700 to-slate-800 text-white p-4 sm:p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 sm:w-32 h-20 sm:h-32 bg-white/10 rounded-full -mr-10 sm:-mr-16 -mt-10 sm:-mt-16"></div>
+                        <div class="absolute bottom-0 right-0 w-16 sm:w-24 h-16 sm:h-24 bg-white/5 rounded-full -mr-8 sm:-mr-12 -mb-8 sm:-mb-12"></div>
+                        <div class="relative z-10 flex items-center">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-full p-2 sm:p-3 mr-3 sm:mr-4">
+                                <i class="fas fa-shield-alt text-xl sm:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold">Security Systems</h3>
+                                <p class="text-slate-200 text-sm">Advanced security solutions</p>
+                            </div>
+                        </div>
+                        <!-- Large Background Icon -->
+                        <div class="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 text-white/10 text-4xl sm:text-6xl">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="p-4 sm:p-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            <!-- Core Services -->
+                            <div>
+                                <h4 class="text-base sm:text-lg font-bold text-[#1e293b] mb-3 border-l-3 border-slate-500 pl-3">Core Security Services</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-shield-alt text-slate-600 mr-2 text-xs"></i>
+                                        Security Systems
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-key text-slate-600 mr-2 text-xs"></i>
+                                        Access Control
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-video text-slate-600 mr-2 text-xs"></i>
+                                        CCTV Surveillance
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-exclamation-triangle text-slate-600 mr-2 text-xs"></i>
+                                        Intrusion Detection
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Advanced Services -->
+                            <div>
+                                <h4 class="text-base sm:text-lg font-bold text-[#1e293b] mb-3 border-l-3 border-slate-500 pl-3">Advanced Solutions</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-broadcast-tower text-slate-600 mr-2 text-xs"></i>
+                                        24/7 Monitoring
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-home text-slate-600 mr-2 text-xs"></i>
+                                        Smart Home Integration
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-mobile-alt text-slate-600 mr-2 text-xs"></i>
+                                        Mobile App Control
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-tools text-slate-600 mr-2 text-xs"></i>
+                                        Maintenance & Support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Description Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Header -->
+                            <div class="text-left lg:text-center mb-16">
+                <div class="inline-block mb-8">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] lg:px-8 lg:py-4 lg:rounded-lg">
+                        Commercial and Residential Services
+                </h2>
+                </div>
+                
+                <!-- Description Text -->
+                <p class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-5xl lg:mx-auto">
+                        We are not only a security company; in fact, we cover a variety of services for both commercial and residential property 
+                        owners. Whether you are a business looking for a comprehensive fire protection system, a homeowner needing security monitoring, 
+                        a school requiring access control systems, or a church needing fire safety solutions; we have the resources to help meet your needs.
+                </p>
+            </div>
+            
+                <!-- Service Type Cards -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+                    <!-- Commercial Services -->
+                    <div class="bg-white rounded-2xl shadow-lg border-l-4 border-red-500 p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full transform translate-x-16 -translate-y-16"></div>
+                        
+                        <div class="relative z-10">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-building text-red-600 text-xl"></i>
+                            </div>
+                                <h3 class="text-4xl font-bold text-[#1e293b]">Commercial Services</h3>
+                        </div>
+                        
+                            <p class="text-base text-gray-600 mb-6 leading-relaxed">
+                                Our security company offers comprehensive commercial services, including fire alarm systems, 
+                                access control, surveillance systems, intrusion detection, fire suppression, and 24/7 monitoring. 
+                                Our services aim to maintain the security, safety, and the overall protection of your commercial property.
+                            </p>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-red-500 mr-3"></i>
+                                    <span class="text-gray-700">Shopping Centers & Retail</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-red-500 mr-3"></i>
+                                    <span class="text-gray-700">Office Buildings & Corporations</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-red-500 mr-3"></i>
+                                    <span class="text-gray-700">Schools & Educational Facilities</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-red-500 mr-3"></i>
+                                    <span class="text-gray-700">Churches & Religious Centers</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-red-500 mr-3"></i>
+                                    <span class="text-gray-700">Industrial Properties</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Residential Services -->
+                    <div class="bg-white rounded-2xl shadow-lg border-l-4 border-slate-600 p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-full transform translate-x-16 -translate-y-16"></div>
+                        
+                        <div class="relative z-10">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-home text-slate-600 text-xl"></i>
+                            </div>
+                                <h3 class="text-4xl font-bold text-[#1e293b]">Residential Services</h3>
+                        </div>
+                        
+                            <p class="text-base text-gray-600 mb-6 leading-relaxed">
+                                Our residential services include solutions that keep your home and family protected and secure. 
+                                We'll come to your home, assess your security needs, and decide the best way to offer long-term 
+                                protection solutions to your particular requirements.
+                            </p>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-slate-600 mr-3"></i>
+                                    <span class="text-gray-700">Home Security Systems</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-slate-600 mr-3"></i>
+                                    <span class="text-gray-700">Fire Detection & Alarms</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-slate-600 mr-3"></i>
+                                    <span class="text-gray-700">Smart Home Integration</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-slate-600 mr-3"></i>
+                                    <span class="text-gray-700">Video Surveillance & Monitoring</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-slate-600 mr-3"></i>
+                                    <span class="text-gray-700">Property Enhancement & Safety</span>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Section -->
+                <div class="text-center">
+                    <div class="bg-red-50 border-4 border-red-500 rounded-3xl p-12 max-w-5xl mx-auto">
+                        <p class="text-base text-gray-700 leading-relaxed mb-8">
+                            Security Dynamics Inc. delivers the same level of service and high-quality craftsmanship for both 
+                            commercial as well as residential properties. It doesn't matter if you want fire protection systems installed in your corporate 
+                            building or if you are a family looking to secure their home, we deliver the same high-quality results that 
+                            you have come to expect from us.
+                        </p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Our Process Section -->
+     <section class="py-20 lg:py-32 relative overflow-hidden" style="background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85)), url('images/project-2.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-left lg:text-center max-w-6xl lg:mx-auto">
+                <div class="inline-flex items-center bg-red-50/10 border border-red-400/30 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-cogs text-red-400 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-400 uppercase tracking-wider">OUR PROCESS</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
+                    Providing Security & Fire Solutions for<br>
+                    Homes & Businesses Since 1985.
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 mb-16 max-w-3xl lg:mx-auto leading-relaxed">
+                    Our proven three-step approach ensures comprehensive protection tailored to your unique security needs.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                        <div class="text-red-400 text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-search-dollar"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Inspection</h3>
+                        <p class="text-gray-300 leading-relaxed">We start with a thorough inspection of your property, assessing vulnerabilities and identifying the best solutions tailored to your specific needs.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                        <div class="text-red-400 text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Installation</h3>
+                        <p class="text-gray-300 leading-relaxed">Our certified experts handle the complete installation of security systems, ensuring each component is set up correctly and functioning at optimal performance levels.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                        <div class="text-red-400 text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Maintenance & Support</h3>
+                        <p class="text-gray-300 leading-relaxed">We provide ongoing maintenance and 24/7 support, conducting regular system checks, repairs, and upgrades to keep your security solution effective and current.</p>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="mt-16">
+                    <a href="tel:6093948800" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-red-500/25 hover:scale-105">
+                        Get Your Free Assessment Today
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-20 left-10 w-32 h-32 border-2 border-red-400 rounded-full"></div>
+            <div class="absolute bottom-20 right-10 w-24 h-24 border-2 border-blue-400 rounded-full"></div>
+            <div class="absolute top-1/2 right-20 w-16 h-16 border-2 border-white rounded-full"></div>
+        </div>
+    </section>
+    <!-- Industries Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="text-left lg:text-center mb-20">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-industry text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">INDUSTRIES</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6 leading-tight">
+                    Industries We
+                    Proudly Serve
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    From automotive to banking, education to healthcare, SDI provides specialized security and fire protection 
+                    solutions tailored to the unique needs of diverse industries across New Jersey and Pennsylvania.
+                </p>
+            </div>
+            
+            <!-- Industries Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Automotive Industry -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/k8kichh4wu4.webp" alt="Automotive Industry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Automotive Industry</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Comprehensive Safety Inspections, Testing, Service & Sales for Enhanced Fire Protection and Security.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Banking -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/sgdybq6kheq.webp" alt="Banking" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Banking</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            SDI deploys solutions designed with critical banking operations in mind: safeguarding your assets and the assets of the customers who put their trust in you.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Cannabis -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/skkth9zytxu.webp" alt="Cannabis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Cannabis</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            SDI provides security, fire and life safety, and legal and regulatory compliance for leaders in the emerging cannabis industry.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Commercial/Retail Properties -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/project-1.webp" alt="Commercial/Retail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Commercial/Retail</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            We can support your sourcing and facility management teams in reducing operating costs, optimizing efficiencies and more.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/mission-vision-img.webp" alt="Education" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Education</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            SDI understands the complex risk environment of K-12 schools and higher education facilities and campuses.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Residential Properties -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/industry-img2.webp" alt="Residential Properties" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Residential Properties</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Our team works closely with you to assess your home's unique security and fire protection needs, ensuring that your systems are highly functional and tailored to your specific requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Restaurants -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/industry-img6.webp" alt="Restaurants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Restaurants</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Mitigate risks and reduce losses in food service operations of any size, from local restaurants to national chains, with integrated security, fire, and life safety solutions from SDI.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Religious Organizations -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/project-3.webp" alt="Religious Organizations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Religious Organizations</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Ensuring Safety in Sacred Spaces: SDI provides specialized security solutions to protect places of worship, ensuring a safe environment for congregants to gather and worship.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Warehouses -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/industry-img/warehouses-and-distribution-centers-img1.webp" alt="Warehouses & Distribution" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-bold">Warehouses & Distribution</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Comprehensive security and fire protection solutions for warehouses and distribution centers, ensuring the safety of your inventory, equipment, and personnel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom CTA -->
+            <div class="text-center mt-20">
+                <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-12 text-white relative overflow-hidden max-w-4xl mx-auto">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-32 -translate-y-32"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-red-500 opacity-10 rounded-full transform -translate-x-24 translate-y-24"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-4xl font-bold mb-4">Don't See Your Industry?</h3>
+                        <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Every industry has unique security and fire protection needs. Contact us to discuss custom solutions 
+                        tailored specifically for your business requirements and industry standards.
+                    </p>
+                        <a href="tel:6093948800" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-phone mr-3"></i>
+                        Discuss Your Industry Needs
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Suppliers Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-left lg:text-center mb-16">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-handshake text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">SUPPLIERS</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6">Quality You Can Trust</h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    We collaborate with the most reputable suppliers in the security and fire protection industry, 
+                    ensuring our clients receive cutting-edge technology and reliable solutions that meet the highest standards of quality and performance.
+                </p>
+            </div>
+            
+                         <!-- Supplier Logos Grid -->
+             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12 items-center mb-12">
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge3.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge6.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge7.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge8.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge9.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badg10.webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                     <img src="images/supplier-img/badge11 (1).webp" alt="Supplier Logo" class="h-16 w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                 </div>
+                 <div class="flex justify-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 group">
+                     <span class="text-lg font-bold text-gray-700 group-hover:scale-105 transition-transform duration-300">& More</span>
+                 </div>
+             </div>
+            
+            
+        </div>
+        
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full opacity-20 -translate-y-48 translate-x-48"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-100 rounded-full opacity-20 translate-y-32 -translate-x-32"></div>
+    </section>
+ 
+    <!-- Areas Served Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Header -->
+            <div class="text-left lg:text-center mb-20">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-map-marked-alt text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">SERVICE AREAS</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6 leading-tight">
+                    Protecting Communities<br>
+                    Across Two States
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    Security Dynamics Inc. delivers world-class security and fire protection services across strategic locations 
+                    in Central New Jersey and Eastern Pennsylvania, ensuring comprehensive coverage for your peace of mind.
+                </p>
+            </div>
+            
+            <!-- Service Areas Grid -->
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+                    <!-- New Jersey Section -->
+                    <div class="group">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+                            <!-- Header -->
+                            <div class="bg-gradient-to-r from-slate-700 to-slate-800 p-8 text-white relative">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-white/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                                                <i class="fas fa-map-marker-alt text-xl"></i>
+                                            </div>
+                                            <h3 class="text-3xl font-bold">New Jersey</h3>
+                                        </div>
+                                        <p class="text-slate-200 text-lg">Central & Northern Regions</p>
+                                    </div>
+                                    <div class="text-6xl opacity-20">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-8 space-y-6">
+                                <!-- Primary Coverage -->
+                                <div class="relative">
+                                    <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-slate-600 to-slate-700 rounded-full"></div>
+                                    <div class="pl-6">
+                                        <div class="flex items-center mb-3">
+                                            <i class="fas fa-star text-slate-700 mr-2"></i>
+                                            <h4 class="text-4xl font-bold text-[#1e293b]">Primary Service Area</h4>
+                                        </div>
+                                        <div class="bg-slate-50 rounded-xl p-4 mb-3">
+                                            <h5 class="text-lg font-bold text-slate-800 mb-2">Mercer County</h5>
+                                            <p class="text-gray-700 text-sm leading-relaxed">
+                                                <strong>Key Cities:</strong> Trenton, Princeton, Lawrence Township, Hamilton, Ewing, 
+                                                West Windsor, Hopewell, Pennington, and surrounding communities
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Extended Areas -->
+                                <div class="relative">
+                                    <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-slate-500 to-slate-600 rounded-full"></div>
+                                    <div class="pl-6">
+                                        <div class="flex items-center mb-3">
+                                            <i class="fas fa-map text-slate-600 mr-2"></i>
+                                            <h4 class="text-4xl font-bold text-[#1e293b]">Extended Coverage</h4>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Middlesex County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Somerset County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Hunterdon County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-slate-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Monmouth County</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pennsylvania Section -->
+                    <div class="group">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+                            <!-- Header -->
+                            <div class="bg-gradient-to-r from-red-600 to-red-700 p-8 text-white relative">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-white/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                                                <i class="fas fa-map-marker-alt text-xl"></i>
+                                            </div>
+                                            <h3 class="text-3xl font-bold">Pennsylvania</h3>
+                                        </div>
+                                        <p class="text-red-100 text-lg">Eastern & Southeastern Regions</p>
+                                    </div>
+                                    <div class="text-6xl opacity-20">
+                                        <i class="fas fa-fire-extinguisher"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-8 space-y-6">
+                                <!-- Primary Coverage -->
+                                <div class="relative">
+                                    <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-red-500 to-red-600 rounded-full"></div>
+                                    <div class="pl-6">
+                                        <div class="flex items-center mb-3">
+                                            <i class="fas fa-star text-red-600 mr-2"></i>
+                                            <h4 class="text-4xl font-bold text-[#1e293b]">Primary Service Area</h4>
+                                        </div>
+                                        <div class="bg-red-50 rounded-xl p-4 mb-3">
+                                            <h5 class="text-lg font-bold text-red-800 mb-2">Bucks County</h5>
+                                            <p class="text-gray-700 text-sm leading-relaxed">
+                                                <strong>Key Cities:</strong> Newtown, Doylestown, Langhorne, Bristol, Yardley, 
+                                                Warrington, Chalfont, New Hope, and surrounding communities
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Extended Areas -->
+                                <div class="relative">
+                                    <div class="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-red-400 to-red-500 rounded-full"></div>
+                                    <div class="pl-6">
+                                        <div class="flex items-center mb-3">
+                                            <i class="fas fa-map text-red-500 mr-2"></i>
+                                            <h4 class="text-4xl font-bold text-[#1e293b]">Extended Coverage</h4>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Montgomery County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Philadelphia County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Northampton County</span>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-3 text-center hover:bg-red-50 transition-colors">
+                                                <span class="text-gray-800 font-medium">Lehigh County</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-12 text-white relative overflow-hidden max-w-4xl mx-auto">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-32 -translate-y-32"></div>
+                        <div class="absolute bottom-0 left-0 w-48 h-48 bg-red-500 opacity-10 rounded-full transform -translate-x-24 translate-y-24"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-4xl font-bold mb-4">
+                                Don't See Your Location Listed?
+                            </h3>
+                            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                                We're continuously expanding our reach to serve more communities. Contact our team to discuss 
+                                service availability in your specific area and discover how we can protect what matters most to you.
+                            </p>
+                            
+                            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                                <a href="tel:6093948800" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+                                    <i class="fas fa-phone mr-3"></i>
+                                    Call (609) 394-8800
+                                </a>
+                                <a href="#" class="inline-flex items-center bg-white/10 border border-white/20 hover:bg-white hover:text-slate-800 text-white font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm">
+                                    <i class="fas fa-quote-left mr-3"></i>
+                                    Request Free Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Header -->
+            <div class="text-left lg:text-center mb-20">
+                <div class="inline-flex items-center bg-red-50 border border-red-200 rounded-full px-6 py-2 mb-6">
+                    <i class="fas fa-book-open text-red-500 mr-3"></i>
+                    <span class="text-sm font-semibold text-red-600 uppercase tracking-wider">LEARNING CENTER</span>
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold text-[#1e293b] mb-6 leading-tight">
+                    Expert Knowledge<br>
+                    At Your Fingertips
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-4xl lg:mx-auto leading-relaxed">
+                    Stay informed with the latest security and fire protection insights, tips, and industry updates 
+                    from our team of certified professionals with over 38 years of experience.
+                </p>
+            </div>
+            
+            <!-- Featured Blog Posts -->
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 items-stretch">
+                    <!-- Blog Post 1 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 h-full">
+                            <!-- Image -->
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/extinguisher.svg" alt="Fire Safety" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-white text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                        Fire Safety
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-2">
+                                        <i class="fas fa-clock text-white text-sm"></i>
+                                        <span class="text-white text-sm ml-1">5 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-8">
+                                <div class="flex items-center mb-4 text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt mr-2"></i>
+                                    <span>January 15, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <span>Fire Protection</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">
+                                    Essential Fire Safety Tips for Commercial Buildings
+                                </h3>
+                                
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Learn the critical fire safety measures every business owner should implement to protect 
+                                    employees, customers, and property. From proper evacuation plans to regular system maintenance.
+                                </p>
+                                
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 2 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 h-full">
+                            <!-- Image -->
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/project-2.webp" alt="Security Systems" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-white text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                        Security Systems
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-2">
+                                        <i class="fas fa-clock text-white text-sm"></i>
+                                        <span class="text-white text-sm ml-1">7 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-8">
+                                <div class="flex items-center mb-4 text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt mr-2"></i>
+                                    <span>January 10, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <span>Security Technology</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">
+                                    How Modern Security Systems Prevent Break-ins
+                                </h3>
+                                
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Discover the latest advancements in security technology and how integrated systems 
+                                    with smart monitoring can deter criminals and protect your property 24/7.
+                                </p>
+                                
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 3 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 h-full">
+                            <!-- Image -->
+                            <div class="relative h-64 overflow-hidden">
+                                <img src="images/hero-image.webp" alt="Home Security" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-white text-red-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                        Home Security
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 right-4">
+                                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-2">
+                                        <i class="fas fa-clock text-white text-sm"></i>
+                                        <span class="text-white text-sm ml-1">4 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="p-8">
+                                <div class="flex items-center mb-4 text-sm text-gray-500">
+                                    <i class="fas fa-calendar-alt mr-2"></i>
+                                    <span>January 5, 2025</span>
+                                    <span class="mx-2">•</span>
+                                    <span>Residential Security</span>
+                                </div>
+                                
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">
+                                    Top 10 Home Security Mistakes to Avoid
+                                </h3>
+                                
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Common security oversights that homeowners make and how to address them. Simple changes 
+                                    can significantly improve your home's security and give you peace of mind.
+                                </p>
+                                
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Additional Blog Posts Row -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mt-16 items-stretch">
+                    <!-- Mini Blog Post 1 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 h-full">
+                            <div class="relative h-48">
+                                <img src="images/project-3.webp" alt="CCTV System" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-3 left-3">
+                                    <span class="bg-white text-red-600 px-2 py-1 rounded-full text-xs font-bold">
+                                        Surveillance
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                                    CCTV System Maintenance Guide
+                                </h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    Keep your surveillance system running optimally with these maintenance tips.
+                                </p>
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Mini Blog Post 2 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 h-full">
+                            <div class="relative h-48">
+                                <img src="images/project-4.webp" alt="Keyless Entry" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-3 left-3">
+                                    <span class="bg-white text-red-600 px-2 py-1 rounded-full text-xs font-bold">
+                                        Access Control
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                                    Keyless Entry: Pros and Cons
+                                </h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    Explore the benefits and drawbacks of modern keyless entry systems.
+                                </p>
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Mini Blog Post 3 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 h-full">
+                            <div class="relative h-48">
+                                <img src="images/fire-alarm-system.svg" alt="Fire Alarm System" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-3 left-3">
+                                    <span class="bg-white text-red-600 px-2 py-1 rounded-full text-xs font-bold">
+                                        Alarms
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                                    Understanding Fire Alarm Codes
+                                </h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    A comprehensive guide to fire alarm system regulations and compliance.
+                                </p>
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Mini Blog Post 4 -->
+                    <article class="group cursor-pointer">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 h-full">
+                            <div class="relative h-48">
+                                <img src="images/project-5.webp" alt="Security System Maintenance" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                                <div class="absolute top-3 left-3">
+                                    <span class="bg-white text-red-600 px-2 py-1 rounded-full text-xs font-bold">
+                                        Maintenance
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                                    Annual Security System Checkup
+                                </h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    What to expect during your yearly security system inspection and maintenance.
+                                </p>
+                                <div class="flex justify-center">
+                                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-xs font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute top-20 left-10 w-32 h-32 border-2 border-blue-400 rounded-full"></div>
+            <div class="absolute bottom-20 right-10 w-24 h-24 border-2 border-red-400 rounded-full"></div>
+            <div class="absolute top-1/2 right-20 w-16 h-16 border-2 border-green-400 rounded-full"></div>
+        </div>
+    </section>
+<!-- Final CTA Section -->
+<section id="contact" class="py-20 bg-gradient-to-br from-slate-700 to-slate-800 text-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-red-500 opacity-10 rounded-full transform -translate-x-24 translate-y-24"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-4xl lg:text-6xl font-bold text-white leading-tight mb-8">
+                Ready to protect your business or home?
+            </h2>
+            
+            <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                Contact Security Dynamics Inc today for a free consultation and quote. 
+                Our certified technicians are standing by to design the perfect fire protection and security solution for your needs.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 fade-in">
+                <a href="tel:6093948800" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-full text-lg btn-enhanced shadow-enhanced">
+                    <i class="fas fa-phone mr-3 icon-hover"></i>
+                    Call (609) 394-8800
+                </a>
+                <a href="index.html#contact" class="inline-flex items-center bg-white/10 border border-white/20 hover:bg-white hover:text-slate-800 text-white font-bold px-8 py-4 rounded-full text-lg btn-enhanced shadow-enhanced backdrop-blur-sm">
+                    <i class="fas fa-quote-left mr-3 icon-hover"></i>
+                    Request Free Quote
+                </a>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-white/20">
+                <p class="text-lg text-gray-300">
+                    Licensed & Insured • 38+ Years Experience • Satisfaction Guaranteed
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Red Divider Line -->
+<div class="h-px bg-gradient-to-r from-transparent via-red-600 to-transparent"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 lg:py-12">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6 max-w-7xl mx-auto">
+                <!-- Footer Logo Section -->
+                <div class="footer-section sm:col-span-2 md:col-span-3 lg:col-span-1 lg:pr-2">
+                    <div class="footer-logo mb-4">
+                        <img src="images/logo-2.webp" alt="Security Dynamics Inc." class="h-16 sm:h-20 lg:h-24 w-auto">
+                    </div>
+                    <p class="text-sm mb-6 hidden lg:block">Professional security and fire protection services with a commitment to quality and customer satisfaction since 1985.</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services Section -->
+                <div class="footer-section">
+                    <h4 class="text-white font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Home Security</a></li>
+                        <li><a href="#" class="hover:text-white transition">Intrusion Detection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Access Control</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fire Protection</a></li>
+                        <li><a href="#" class="hover:text-white transition">Video Surveillance</a></li>
+                        <li><a href="#" class="hover:text-white transition">24/7 Monitoring</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Useful Links Section -->
+                <div class="footer-section lg:-mx-3">
+                    <h4 class="text-white font-semibold text-lg mb-4">Useful Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Pay Service Bill</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pay Monitoring Bill</a></li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-colors duration-300 shadow-lg hover:shadow-xl inline-block">
+                            Leave a Review
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Company Info Section -->
+                <div class="footer-section lg:pl-2">
+                    <h4 class="text-white font-semibold text-lg mb-4">Company Info</h4>
+                    <div class="space-y-2 text-sm">
+                        <p>609-394-8800</p>
+                        <p>Central New Jersey, Eastern Pennsylvania</p>
+                        <p>24/7 Emergency Service</p>
+                        <p>Mon-Fri: 9 am - 5 pm</p>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Section -->
+                <div class="footer-section sm:col-span-2 md:col-span-3 lg:col-span-2">
+                    <h4 class="text-white font-semibold text-lg mb-4">Stay Updated</h4>
+                    <p class="text-sm text-gray-300 mb-4">Subscribe to our newsletter for security tips, company updates, and special offers.</p>
+                    <form class="space-y-3">
+                        <div class="flex flex-col gap-2">
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email address" 
+                                class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-full text-white placeholder-gray-300 focus:outline-none focus:border-white/40 backdrop-blur-sm text-sm"
+                            >
+                            <button 
+                                type="submit" 
+                                class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl text-sm w-full"
+                            >
+                                Subscribe Now
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-400">No spam, unsubscribe at any time. We respect your privacy.</p>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom border-t border-gray-800 mt-8 pt-8">
+                <div class="text-center">
+                    <p class="text-sm mb-4">© 2025 Security Dynamics Inc. All rights reserved.</p>
+                    <p class="text-xs text-gray-500">Fire New Jersey P00747 | Burglar New Jersey 34BA00089500</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+
+    <!-- Sticky Mobile CTA Button -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
+        <a href="#" class="block bg-red-600 hover:bg-red-700 text-white text-center py-4 font-bold text-lg transition-colors duration-300 shadow-lg">
+            Request A Quote
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('hidden');
+            document.getElementById('main-header').style.display = 'none';
+            setTimeout(() => {
+                mobileMenu.classList.remove('-translate-x-full');
+            }, 10);
+        });
+
+        // Close mobile menu
+        function closeMobileMenu() {
+            mobileMenu.classList.add('-translate-x-full');
+            setTimeout(() => {
+                mobileMenuOverlay.classList.add('hidden');
+                document.getElementById('main-header').style.display = 'block';
+            }, 300);
+        }
+
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                closeMobileMenu();
+            }
+        });
+
+        // Mobile menu item toggles
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+        mobileMenuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const chevron = this.querySelector('.fa-chevron-down, .fa-chevron-up');
+                const submenu = this.nextElementSibling;
+                
+                if (chevron && submenu) {
+                    if (chevron.classList.contains('fa-chevron-down')) {
+                        chevron.classList.remove('fa-chevron-down');
+                        chevron.classList.add('fa-chevron-up');
+                        submenu.classList.remove('hidden');
+                    } else {
+                        chevron.classList.remove('fa-chevron-up');
+                        chevron.classList.add('fa-chevron-down');
+                        submenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Mobile submenu item toggles
+        const mobileSubmenuItems = document.querySelectorAll('.mobile-submenu-item');
+        mobileSubmenuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const chevron = this.querySelector('.fa-chevron-down, .fa-chevron-up');
+                const subsubmenu = this.nextElementSibling;
+                
+                if (chevron && subsubmenu) {
+                    if (chevron.classList.contains('fa-chevron-down')) {
+                        chevron.classList.remove('fa-chevron-down');
+                        chevron.classList.add('fa-chevron-up');
+                        subsubmenu.classList.remove('hidden');
+                    } else {
+                        chevron.classList.remove('fa-chevron-up');
+                        chevron.classList.add('fa-chevron-down');
+                        subsubmenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
